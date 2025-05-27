@@ -1,0 +1,122 @@
+/* RightPanel.css */
+
+.right-panel {
+  width: 460px;
+  max-width: 460px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #f6f9fc;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Appointments */
+.appointment-cards {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ✅ allows wrapping if space is tight */
+}
+
+.card {
+  flex: 1 1 48%; /* ✅ responsive two-column layout */
+  padding: 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* ✅ allows text to wrap */
+  max-width: 100%;
+  min-width: 0;
+}
+
+.dentist-card {
+  background-color: #002e6e;
+  color: white;
+}
+
+.physio-card {
+  background-color: #e5d8ff;
+  color: #2d0c57;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card-time,
+.card-doctor {
+  font-size: 12px;
+}
+
+/* Schedule section */
+.schedule-section {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d0c57;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule-title {
+  margin-bottom: 4px;
+  font-size: 15px;
+  color: #4a056b;
+}
+
+.day-section {
+  margin-bottom: 8px;
+}
+
+.day-label {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.schedule-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.schedule-item {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  background-color: #edf2f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 140px;
+}
+
+.schedule-item span {
+  font-weight: 500;
+  color: #2d0c57;
+  font-size: 12px;
+}
+
+/* Optional scrollbar hiding */
+.schedule-row::-webkit-scrollbar {
+  display: none;
+}
+
+.schedule-row {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

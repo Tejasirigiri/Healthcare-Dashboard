@@ -1,0 +1,23 @@
+.dashboard-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 16px;
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.this-week-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333; /* Optional: use your theme text color */
+}
+
+.down-arrow {
+  margin-left: 4px;
+  font-size: 14px;
+}

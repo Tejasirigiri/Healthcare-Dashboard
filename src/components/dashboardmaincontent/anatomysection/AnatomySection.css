@@ -1,0 +1,41 @@
+.anatomy-container {
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.human-body-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Adjust these as per actual image proportions */
+.heart { top: 50px; left: 120px; }
+.lungs { top: 90px; left: 130px; }
+.teeth { top: 40px; left: 150px; }
+.bone  { top: 180px; left: 110px; }
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status.green { background-color: #4caf50; }
+.status.red   { background-color: #f44336; }

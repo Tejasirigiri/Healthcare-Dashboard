@@ -1,0 +1,80 @@
+/* Main Health Card Container */
+.health-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  height: calc((280px - 24px) / 3); /* Ensure 3 cards fit inside 280px image height */
+  box-sizing: border-box;
+}
+
+/* Icon Section */
+.icon-box {
+  flex-shrink: 0;
+}
+
+.icon-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Right Content (Title, Date, Status Bar) */
+.health-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.health-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.health-card-date {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+/* Status bar container */
+.health-card-status-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* Actual colored status bar */
+.status-bar {
+  height: 6px;
+  width: 60px;
+  border-radius: 999px;
+}
+
+/* Color classes (match your Tailwind or CSS color setup) */
+.bg-red-400 {
+  background-color: #f87171;
+}
+
+.bg-green-400 {
+  background-color: #34d399;
+}
+
+.bg-orange-400 {
+  background-color: #fb923c;
+}
+.details-label {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-end;
+}
+

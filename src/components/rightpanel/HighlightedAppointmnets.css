@@ -1,0 +1,44 @@
+.highlighted-appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.appointment-card {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: white;
+}
+
+.dentist {
+  background-color: #004080; /* Dark Blue */
+}
+
+.physio {
+  background-color: #e6e6ff; /* Very light lavender */
+  color: #4a4a9e;            /* Darker purple text */
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.details .title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.details .time {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.details .doctor {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-top: 2px;
+}

@@ -1,0 +1,61 @@
+.activity-container {
+  background-color: #f4f9fc;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 16px;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.activity-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.activity-summary {
+  font-size: 14px;
+  color: #666;
+}
+
+.chart-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  overflow: hidden;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.day-lines {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: flex-end;
+  height: 100px;
+}
+
+.stick-line {
+  width: 4px;
+  border-radius: 2px;
+}
+
+.day-label {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+  font-family: 'Poppins', sans-serif;
+}
